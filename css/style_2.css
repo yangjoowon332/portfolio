@@ -55,6 +55,10 @@ img {
   pointer-events: none; /* 필요 시 클릭 차단 */
 }
 
+img, p, h1, h2, h3, span {
+  user-select: none;
+  -webkit-user-drag: none;
+}
 
 /* Header */
 header {
@@ -1842,3 +1846,4 @@ Section Headers
     /*스크롤바 뒷 배경 색상*/
 
 }
+
