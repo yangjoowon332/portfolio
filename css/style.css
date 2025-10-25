@@ -10,10 +10,15 @@ body {margin: 0 auto; color: #fff; overflow-x: hidden;}
 .italiana-regular {
   font-family: "Italiana", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; user-select: none;
+  -webkit-user-select: none;
 }
 
-
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
 
 
 span.circle { position: fixed; top: 0; left: 0; width: 40px; height: 40px; border-radius: 50%; background: url('../images/sec2img.png'); background-size: cover; border: 1px solid rgba(0,0,0,0.5); pointer-events: none; transition: 0s; /* transform: translate(-50%, -50%); */
@@ -610,4 +615,5 @@ footer .footer_chess.footerChess {animation: 1s footerChess forwards ease-in;}
   80% {transform:translate(-50%,-50%) rotate(-90deg);}
   90% {transform:translate(-50%,-50%) rotate(-80deg);}
   100% {transform:translate(-50%,-50%) rotate(-90deg);}
+
 }
