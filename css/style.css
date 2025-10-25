@@ -13,6 +13,10 @@ body {margin: 0 auto; color: #fff; overflow-x: hidden;}
   font-style: normal; user-select: none;
   -webkit-user-select: none;
 }
+img, p, h1, h2, h3, span {
+  user-select: none;
+  -webkit-user-drag: none;
+}
 
 img {
   -webkit-user-drag: none;
@@ -617,3 +621,4 @@ footer .footer_chess.footerChess {animation: 1s footerChess forwards ease-in;}
   100% {transform:translate(-50%,-50%) rotate(-90deg);}
 
 }
+
