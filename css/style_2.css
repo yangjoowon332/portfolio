@@ -30,6 +30,8 @@
     --header-bg: rgba(15, 15, 35, 0.9);
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -43,8 +45,16 @@ body {
     background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary), var(--bg-tertiary));
     color: var(--text-primary);
     overflow-x: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;user-select: none;
+  -webkit-user-select: none;
 }
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none; /* 필요 시 클릭 차단 */
+}
+
 
 /* Header */
 header {
@@ -1830,4 +1840,5 @@ Section Headers
 .screen::-webkit-scrollbar-track {
     background: rgba(220, 20, 60, .1);
     /*스크롤바 뒷 배경 색상*/
+
 }
